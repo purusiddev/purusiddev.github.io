@@ -1,0 +1,91 @@
+:root {
+    min-width: max-content;
+    background-color: #eee;
+    color: #000;
+    background-image: linear-gradient(-30deg, #aaa, #fff);
+    background-attachment: fixed;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all .3s linear;
+    border: none;
+    transition: none;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+a[href] {
+    color: #0af;
+}
+
+button {
+    background-color: #fff;
+    border-radius: 1em;
+    font-weight: bold;
+    padding: 1em;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color: #fff;
+        background-color: #111;
+        background-image: repeating-linear-gradient(-30deg, #000, #555);
+    }
+}
+
+/*styles for the banner*/
+
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    min-width: fit-content;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10em;
+    padding: 5em;
+}
+
+.banner-img {
+    border-radius: .5em;
+    max-width: 8em;
+}
+
+.banner-content {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em;
+}
+
+/*styles for the navigation bar*/
+
+.nav-bar {
+    width: 100%;
+    min-width: fit-content;
+    display: flex;
+    justify-content: center;
+    padding: .5em;
+    background-color: #fff7;
+    gap: 1em;
+}
+
+.nav-bar>* {
+    padding: .5em;
+}
+
+@media (prefers-color-scheme: dark) {
+    .nav-bar {
+        background-color: #0007;
+    }
+}
